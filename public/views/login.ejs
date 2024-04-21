@@ -1,13 +1,14 @@
 <html>
     <head>
         <title>Login</title>
+        <link href="/css/login.css" rel="stylesheet">
     </head>
     <body>
         <h1>Please log in to your GPT wrapper account. To create an account, please <a href="/login">contact the developers.</a></h1>
         <div id="main-form">
-            <form>
-                <input id="username" placeholder="Enter your username"></input>
-                <input id="password" placeholder="Enter your password" type="passsword"></input>
+            <form method="POST" action="/executeLogin">
+                <input id="username" name="username" placeholder="Enter your username"></input>
+                <input id="password" name="password" placeholder="Enter your password" type="password"></input>
                 <button type="submit">Log in</button>
             </form>
         </div>
